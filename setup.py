@@ -8,4 +8,13 @@ setup(name="mio0",
       author="Andre Meyer",
       author_email="nope",
       license="MIT",
-      packages=["mio0"])
+      packages=["mio0"],
+      python_requires=">=3",
+      classifiers=[
+            'Development Status :: 3 - Alpha',
+            'Intended Audience :: Developers',
+            'Topic :: Rom Hacking :: N64 :: Compression Algorithm',
+            'License :: MIT License',
+            'Programming Language :: Python :: 3.8'
+      ]
+)

@@ -1,6 +1,4 @@
-from mio0.mio0 import find_mio0_indices
-from mio0.decompress import decompress_mio0
-from mio0.endians import Endianness
+from mio0 import find_mio0_indices, decompress_mio0, Endianness
 
 from pathlib import Path
 
@@ -18,7 +16,7 @@ def test_decompress():
 
             assert compare_file_path.exists(), "Must have matching comparison file (possibly detected mio0 segment at wrong position)"
 
-            output, segment_length = decompress_mio0(rom_data[segment_start:], Endianness.BIG)
+            output, _ = decompress_mio0(rom_data[segment_start:], Endianness.BIG)
             
             #print(segment_length)
             
