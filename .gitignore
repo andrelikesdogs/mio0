@@ -4,6 +4,7 @@ Lib/
 Scripts/
 
 *.[z|n]64*
+**/__pycache__
 
 # folder used for comparison check files
 decompressed_mio0/
