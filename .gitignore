@@ -1,0 +1,14 @@
+pyvenv.cfg
+Include/
+Lib/
+Scripts/
+
+*.[z|n]64*
+
+# folder used for comparison check files
+decompressed_mio0/
+
+# used for comparison check
+mio0.exe
+
+.pytest*
